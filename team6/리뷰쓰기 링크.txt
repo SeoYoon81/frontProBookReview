@@ -1,0 +1,29 @@
+리뷰쓰기 링크
+<BookItem>
+디자인
+  .button-container {
+      display: flex;
+      gap: 10px; /* 버튼 간의 간격 */
+      margin-top: 0.5rem;
+
+함수 추가부분
+ const navigate = useNavigate();
+  const handleReviewClick = () => {
+    onInsertR(book.bookname, book.bookImageURL);
+    navigate("/review");
+  };
+
+return 추가부분
+<div className="button-container">
+          <button onClick={() => onInsert(isbn13)}>북카트에 담기</button>
+          <button onClick={handleReviewClick}>리뷰쓰기</button>
+        </div>
+
+
+
+
+
+
+
+
+
